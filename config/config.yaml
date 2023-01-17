@@ -179,7 +179,7 @@ rule-providers:
   Microsoft:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Microsoft
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Microsoft.yaml
     path: "./rule_provider/Microsoft.yaml"
   Apple:
     type: http
