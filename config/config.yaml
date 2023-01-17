@@ -1,0 +1,189 @@
+rules:
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- RULE-SET,Special-Direct,🎯 Global Direct
+- RULE-SET,TikTok,💬 Social
+- RULE-SET,Telegram,💬 Social
+- RULE-SET,Instagram,💬 Social
+- RULE-SET,Developer,♾️ Programing
+- RULE-SET,Xbox,🚀 Node Selection
+- RULE-SET,IR-CIDR,🎯 Global Direct
+- RULE-SET,Proxy,🚀 Node Selection
+- RULE-SET,Linkedin,💬 Social
+- RULE-SET,Facebook,💬 Social
+- RULE-SET,Whatsup,💬 Social
+- RULE-SET,Streaming,💬 Social
+- RULE-SET,Microsoft,Ⓜ️ Microsoft Services
+- RULE-SET,Apple,🍎 Apple Services
+- MATCH,🐟 Slipping
+proxy-groups:
+- name: 🚀 Node Selection
+  type: select
+  disable-udp: false
+  proxies:
+  - ♻️ Automatic
+  - DIRECT
+- name: ♾️ Programing
+  type: select
+  disable-udp: false
+  proxies:
+  - 🚀 Node Selection
+  - ♻️ Automatic
+- name: 💬 Social
+  type: select
+  disable-udp: false
+  proxies:
+  - 🚀 Node Selection
+  - 🎯 Global Direct
+- name: "🍎 Apple Services"
+  type: select
+  disable-udp: false
+  proxies:
+  - 🚀 Node Selection
+  - 🎯 Global Direct
+- name: Ⓜ️ Microsoft Services
+  type: select
+  disable-udp: false
+  proxies:
+  - 🎯 Global Direct
+  - 🚀 Node Selection
+- name: 🎯 Global Direct
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+- name: 🛑 Global Intercept
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+- name: ♻️ Automatic
+  type: url-test
+  disable-udp: true
+  proxies:
+  - DIRECT
+  url: https://www.google.com/generate_204
+  interval: '300'
+  tolerance: '150'
+- name: "🐟 Slipping"
+  type: select
+  disable-udp: false
+  proxies:
+  - 🚀 Node Selection
+  - 🎯 Global Direct
+  - 🛑 Global Intercept
+log-level: warning
+allow-lan: true
+ipv6: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 0.0.0.0:7874
+  nameserver:
+  - https://basic.rethinkdns.com/dns-query
+  - tls://one.one.one.one:853
+  - tls://dns.google:853
+  - https://dns.google/dns-query
+  - https://cloudflare-dns.com/dns-query
+  fallback:
+  - https://basic.rethinkdns.com/dns-query
+  - https://azure.cloudflare-dns.com/dns-query
+  - https://dns64.cloudflare-dns.com/dns-query
+  - https://dns1.ryan-palmer.com/dns-query
+  - https://odvr.nic.cz/dns-query
+  - https://puredns.org/dns-query
+  - https://dns.dnshome.de/dns-query
+  - https://doh.seby.io:8443/dns-query
+  - https://ibksturm.synology.me/dns-query
+  - https://dns.hostux.net/dns-query
+  - https://doh.libredns.gr/dns-query
+  - https://doh.42l.fr/dns-query
+  - https://DNS.HeN.ee/dns-query
+  - https://doh.dnswarden.com/uncensored
+  - tls://one.one.one.one:853
+  - tls://dns.google:853
+  - tcp://127.0.0.1#5353:53
+  default-nameserver:
+  - 8.8.8.8
+  - tls://8.8.4.4:853
+rule-providers:
+  Special-Direct:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Special-Direct.yaml"
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Direct.yaml
+    interval: 432000
+  IR-CIDR:
+    type: http
+    behavior: classical
+    path: "./rule_provider/IR-CIDR.yaml"
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/IR-cidr.yaml
+    interval: 432000
+  TikTok:
+    type: http
+    behavior: classical
+    path: "./rule_provider/TikTok.yaml"
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/TikTok.yaml
+    interval: 432000
+  Telegram:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Telegram.yaml"
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Telegram.yaml
+    interval: 432000
+  Instagram:
+    type: http
+    behavior: classical
+    path: "/etc/openclash/rule_provider/Instagram.yaml"
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Instagram.yaml
+    interval: 86400
+  Developer:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Developer.yaml"
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Developer.yaml
+  Xbox:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Xbox.yaml
+    path: "./rule_provider/Xbox.yaml"
+  Proxy:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Proxy.yaml
+    path: "./rule_provider/Proxy.yaml"
+  Linkedin:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Linkedin.yaml
+    path: "./rule_provider/Linkedin.yaml"
+  Facebook:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Facebook.yaml
+    path: "./rule_provider/Facebook.yaml"
+  Whatsup:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Whatsup.yaml
+    path: "./rule_provider/Whatsup.yaml"
+  Streaming:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Streaming.yaml"
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Streaming.yaml
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Microsoft
+    path: "./rule_provider/Microsoft.yaml"
+  Apple:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Apple.yaml"
+    url: https://raw.githubusercontent.com/alibeheshtian/open-clash-config/main/rule_provider/Apple.yaml
+    interval: 86400
