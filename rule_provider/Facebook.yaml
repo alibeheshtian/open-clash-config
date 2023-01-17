@@ -1,0 +1,7 @@
+payload:
+  # Facebook
+  - DOMAIN-SUFFIX,fbcdn.net
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,157.240.19.54
+  - IP-CIDR,157.240.19.0/22,no-resolve
+

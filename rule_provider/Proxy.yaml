@@ -1,0 +1,31 @@
+payload:
+  - DOMAIN-SUFFIX,iranintl.com
+  - DOMAIN-SUFFIX,bbc.com
+  - DOMAIN,router.miwifi.com
+  
+  # > Google
+  - DOMAIN,lens.l.google.com
+  - DOMAIN,play.google.com
+  - DOMAIN,play.googleapis.com
+  - DOMAIN,firebaselogging.googleapis.com
+  - DOMAIN-SUFFIX,gvt0.com
+  - DOMAIN-SUFFIX,gvt1.com
+  - DOMAIN-SUFFIX,gvt2.com
+  - DOMAIN-SUFFIX,gvt3.com
+  - DOMAIN,update.googleapis.com
+  - DOMAIN,translate.googleapis.com
+  - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN,clients1.google.com
+  - DOMAIN,clients2.google.com
+  - DOMAIN,clients3.google.com
+  - DOMAIN,clients4.google.com
+  - DOMAIN,clients5.google.com
+  - DOMAIN,clients6.google.com
+  - DOMAIN,csp.withgoogle.com
+  - DOMAIN,ogs.google.com
+
+  - DOMAIN,SUFFIX,miui.com
+  - DOMAIN-SUFFIX,amazon.com
+  
+ # > Xiaomi
+  - DOMAIN-SUFFIX,xiaomi.com
