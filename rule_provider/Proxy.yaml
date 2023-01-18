@@ -23,6 +23,7 @@ payload:
   - DOMAIN,clients6.google.com
   - DOMAIN,csp.withgoogle.com
   - DOMAIN,ogs.google.com
+  - DOMAIN,mtalk.google.com
 
   - DOMAIN,SUFFIX,miui.com
   - DOMAIN-SUFFIX,amazon.com

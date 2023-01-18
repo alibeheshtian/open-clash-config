@@ -7,11 +7,8 @@ payload:
   - IP-CIDR,5.75.247.183/16,no-resolve
   - IP-CIDR,168.119.62.255/16,no-resolve
   # > SHAD
-  - IP-CIDR,157.240.253.63/16,no-resolve
-  - IP-CIDR,157.245.19.0/16,no-resolve
   - DOMAIN-SUFFIX,mobisystems.com
   - DOMAIN-SUFFIX,ksmobile.com
-
   # > Amin Bahramlu
   - DOMAIN-SUFFIX,aminbahramlu.com
   - DOMAIN,download.vesam24.com
