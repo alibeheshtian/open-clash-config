@@ -2,7 +2,6 @@ payload:
   # > Dler Cloud
   - DOMAIN-SUFFIX,dler.cloud
   - DOMAIN-SUFFIX,gitlab.com
-  - DOMAIN,google.com
 
   # > SSH VPN 
   - PROCESS-NAME,ssh-openssh
