@@ -3,6 +3,7 @@
 payload:
   # > Bia2Movie
   - DOMAIN-KEYWORD,bia2app
+  - DOMAIN-KEYWORD,bia2mov
   - DOMAIN-SUFFIX,onlyfa.click
   - IP-CIDR,5.75.247.183/16,no-resolve
   - IP-CIDR,168.119.62.255/16,no-resolve
