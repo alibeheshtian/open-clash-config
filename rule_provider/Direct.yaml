@@ -1,8 +1,8 @@
 payload:
   # > SSH VPN
 
-  - DOMAIN-SUFFIX,palyst.com
-  - DOMAIN-SUFFIX,partumus.com
+  # - DOMAIN-SUFFIX,palyst.com
+  # - DOMAIN-SUFFIX,partumus.com
   - DOMAIN-SUFFIX,github.com
   # > Microsoft
   # - USER-AGENT,Microsoft%20Remote%20Desktop*
