@@ -1,7 +1,9 @@
 payload:
-  # > SSH VPN 
+  # > SSH VPN
 
-
+  - DOMAIN-SUFFIX,palyst.com
+  - DOMAIN-SUFFIX,partumus.com
+  - DOMAIN-SUFFIX,github.com
   # > Microsoft
   # - USER-AGENT,Microsoft%20Remote%20Desktop*
   - DOMAIN-SUFFIX,msftconnecttest.com
@@ -49,6 +51,6 @@ payload:
   - DOMAIN,api.amazon.com
   # > Adguard
   - DOMAIN-KEYWORD,adguard
-  
+
   # > Programing
   - DOMAIN,download-cdn.jetbrains.com
