@@ -2,6 +2,7 @@
 # Wiki: https://github.com/Dreamacro/clash/wiki/premium-core-features#rule-providers
 payload:
   # > Bia2Movie
+  - DOMAIN-SUFFIX,tgju.org
   - DOMAIN-KEYWORD,bia2app
   - DOMAIN-KEYWORD,bia2mov
   - DOMAIN-SUFFIX,onlyfa.click
