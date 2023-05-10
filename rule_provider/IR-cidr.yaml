@@ -3,6 +3,7 @@
 payload:
   # > Bia2Movie
   - DOMAIN-SUFFIX,tgju.org
+  - DOMAIN-SUFFIX,mobile.ir
   - DOMAIN-KEYWORD,bia2app
   - DOMAIN-KEYWORD,bia2mov
   - DOMAIN-SUFFIX,onlyfa.click
