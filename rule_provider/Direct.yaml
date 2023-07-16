@@ -8,6 +8,7 @@ payload:
   # > Microsoft
   # - USER-AGENT,Microsoft%20Remote%20Desktop*
   - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,litefinance.org
 
   # > Proxy plugin
   - PROCESS-NAME,ssh-openssh
