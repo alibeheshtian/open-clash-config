@@ -1,6 +1,7 @@
 payload:
 
   - DOMAIN,googleapis.com
+  - DOMAIN-SUFFIX,protectly.xyz
   # > SSH VPN
   # - DOMAIN-SUFFIX,palyst.com
   # - DOMAIN-SUFFIX,partumus.com
