@@ -3,4 +3,6 @@ payload:
   - DOMAIN-SUFFIX,enerjisa.com.tr
   - DOMAIN-KEYWORD,fiverr
   - DOMAIN-KEYWORD,turkcell
-  - DOMAIN-SUFFIX,gov.tr
+  - DOMAIN-SUFFIX,ego.gov.tr
+
+  #egocptsrvand.ego.gov.tr
