@@ -4,5 +4,9 @@ payload:
   - DOMAIN-KEYWORD,fiverr
   - DOMAIN-KEYWORD,turkcell
   - DOMAIN-SUFFIX,gov.tr
+  - DOMAIN-SUFFIX,org.tr
+  - DOMAIN-SUFFIX,edu.tr
+  - DOMAIN-SUFFIX,com.tr
+  - DOMAIN-SUFFIX,net.tr
+  - DOMAIN-SUFFIX,web.tr
   - DOMAIN-KEYWORD,upwork
-  #egocptsrvand.ego.gov.tr
