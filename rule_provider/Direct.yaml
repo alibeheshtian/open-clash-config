@@ -56,3 +56,4 @@ payload:
   - DOMAIN,download-cdn.jetbrains.com
   # > Hamid 
   #- DOMAIN-SUFFIX,figma.com
+  - DOMAIN-SUFFIX,irantalent.com
