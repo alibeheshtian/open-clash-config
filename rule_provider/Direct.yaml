@@ -11,7 +11,10 @@ payload:
   # - USER-AGENT,Microsoft%20Remote%20Desktop*
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,litefinance.org
-
+  
+  # > Apple service
+  - DOMAIN-SUFFIX,push.apple.com
+  
   # > Proxy plugin
   - PROCESS-NAME,ssh-openssh
   - PROCESS-NAME,v2ray
